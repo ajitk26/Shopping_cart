@@ -4,7 +4,7 @@ import { AiFillDelete } from 'react-icons/ai'
 import {FaShoppingCart} from "react-icons/fa"
 import { Link } from 'react-router-dom'
 import { CartState } from '../context/Context'
-
+import logo from "../logo.png"
 
 const Header = () => {
 
@@ -17,7 +17,7 @@ const Header = () => {
     <Navbar className='nav' variant='dark'>
         <Container>
             <Navbar.Brand>
-                <Link to='/'>Shopping Carts</Link>
+                <Link to='/'><img src={logo} alt='logo'></img></Link>
             </Navbar.Brand>
             <Navbar.Text className='search'>
                 <FormControl style={{width:400}}
